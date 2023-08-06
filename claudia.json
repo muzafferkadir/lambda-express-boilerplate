@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "lambda-express-boilerplate-executor",
+    "name": "lambda-express-boilerplate",
+    "region": "eu-central-1"
+  },
+  "api": {
+    "id": "o3w43pcwee"
+  }
+}

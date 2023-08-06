@@ -1,0 +1,37 @@
+{
+  "name": "lambda-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Hello world\" project with Express JS to deploy to AWS Lambda Function using Claudia",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "claudia create --handler lambda.handler --deploy-proxy-api --region eu-central-1",
+    "deploy": "claudia update --no-optional-dependencies",
+    "dev": "nodemon app.local.js",
+    "start": "node app.local.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muzafferkadir/lambda-express-boilerplate.git"
+  },
+  "keywords": [
+    "lamba",
+    "express",
+    "claudia",
+    "boilerplate"
+  ],
+  "author": "Muzaffer Kadir YILMAZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muzafferkadir/lambda-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/muzafferkadir/lambda-express-boilerplate#readme",
+  "dependencies": {
+    "aws-serverless-express": "^3.4.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}

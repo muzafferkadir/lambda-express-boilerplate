@@ -135,3 +135,33 @@ Please note that the `npm run create` command and the AWS Dashboard configuratio
 - [Claudia.js - Installing Claudia](https://claudiajs.com/tutorials/installing.html): Tutorials and documentation for installing Claudia, a deployment tool for AWS Lambda functions.
 
 </details>
+
+# Environment Variables
+
+To add environment variables to your AWS Lambda function, you can follow these steps:
+
+**For Local Development**:
+
+1. Create a `.env` file in the project directory.
+2. Open the `.env` file in a text editor.
+3. Add your environment variables in the format `KEY=VALUE`. For example:
+
+   ```plaintext
+   PORT=3000
+   TEST=SOME_TEST_VALUE
+   ```
+
+4. Save the `.env` file.
+
+Ensure that you add the `.env` file to your project's `.gitignore` to keep your sensitive information secure.
+
+**For Production**:
+
+1. Go to the AWS Management Console.
+2. Navigate to the AWS Lambda service.
+3. Open your Lambda function's configuration.
+4. Scroll down to the "Environment variables" section.
+5. Click on the "Edit" button.
+6. Add your environment variables in the format `KEY=VALUE` using the provided input fields.
+7. Click on the "Save" button to apply the changes.
+
